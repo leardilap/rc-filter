@@ -1,0 +1,48 @@
+# EESchema Netlist Version 1.1 created  Mon 29 Jun 2020 12:07:55 AM CEST
+(
+ ( /5EF9147B PIN_ARRAY_2X1  P2 CONN_2 {Lib=CONN_2}
+  (    1 N-000001 )
+  (    2 GND )
+ )
+ ( /5EF90FF7 PIN_ARRAY_2X1  P1 CONN_2 {Lib=CONN_2}
+  (    1 N-000002 )
+  (    2 GND )
+ )
+ ( /5EF90FE8 SM0603  R1 R {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000002 )
+ )
+ ( /5EF90FE4 SM0603  C1 C {Lib=C}
+  (    1 N-000001 )
+  (    2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ C1 1
+ R1 1
+ P2 1
+Net 2 "" ""
+ R1 2
+ P1 1
+Net 3 "GND" "GND"
+ P2 2
+ P1 2
+ C1 2
+}
+#End
